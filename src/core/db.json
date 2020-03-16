@@ -1,0 +1,178 @@
+{
+    "passenger": [
+        {   
+            "mark": "BMW",
+            "models":[
+                {
+                    "model": "m5"
+                },
+                {
+                    "model": "m2"
+                },
+                {
+                    "model": "m3"
+                },
+                {
+                    "model": "320"
+                },
+                {
+                    "model": "x5"
+                }
+            ]
+        },
+        {
+            "mark": "LandRover",
+            "models":[
+                {
+                    "model": "RangeRoverEvoque"
+                },
+                {
+                    "model": "RangeRoverVelar"
+                },
+                {
+                    "model": "Discovery"
+                },
+                {
+                    "model": "RangeRoverSport"
+                },
+                {
+                    "model": "Defender"
+                },
+                {
+                    "model": "DiscoverySport"
+                },
+                {
+                    "model": "RangeRover"
+                }
+            ]
+        },
+        {
+            "mark": "Porsche",
+            "models":[
+                {
+                    "model": "Panamera"
+                },
+                {
+                    "model": "911"
+                },
+                {
+                    "model": "Cayenne"
+                },
+                {
+                    "model": "Macan"
+                },
+                {
+                    "model": "PanameraGTS"
+                },
+                {
+                    "model": "Taycan"
+                }
+            ]
+        },
+        {
+            "mark": "Mercedes-Benz",
+            "models": [
+                {
+                    "model": "A-Class"
+                },
+                {
+                    "model": "B-Class"
+                },
+                {
+                    "model": "C-Class"
+                },
+                {
+                    "model": "E-Class"
+                },
+                {
+                    "model": "S-Class"
+                }
+            ]
+        },
+        {   
+            "mark": "Audi",
+            "models":[
+                {
+                    "model": "rs6"
+                },
+                {
+                    "model": "a8"
+                },
+                {
+                    "model": "r8"
+                },
+                {
+                    "model": "a6"
+                },
+                {
+                    "model": "a4"
+                }
+            ]
+        }
+    ],
+    "moto": [
+        {
+            "mark": "BMW",
+            "models": [
+                {
+                    "model": "r8"
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "region": "Киев",
+            "cities": [
+                {
+                    "city": "Киев"
+                },
+                {
+                    "city": "Барышевка"
+                },
+                {
+                    "city": "Белая Церковь"
+                },
+                {
+                    "city": "Богуслав"
+                },
+                {
+                    "city": "Борисполь"
+                },
+                {
+                    "city": "Бородянка"
+                },
+                {
+                    "city": "Бровары"
+                },
+                {
+                    "city": "Васильков"
+                },
+                {
+                    "city": "Вышгород"
+                },
+                {
+                    "city": "Володарка"
+                },
+                {
+                    "city": "Згуровка"
+                },
+                {
+                    "city": "Иванков"
+                }
+
+            ]
+        },
+        {
+            "region": "Винница",
+            "cities": [
+                {
+                    "city": "Винница"
+                },
+                {
+                    "city": "Жмеринка"
+                }
+            ]
+        }
+    ]
+}
