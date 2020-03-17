@@ -86,17 +86,20 @@ class CarController {
         })
       };
     findByParams(req,res) {
-        let costFrom = req.query.costFrom ? parseInt(req.query.costFrom): '0'
-        let costTo = req.query.costTo ? parseInt(req.query.costTo) : '99999999999';
-        let yearFrom = req.query.yearFrom ? req.query.yearFrom : '1900';
-        let yearUntil = req.query.yearUntil ? req.query.yearUntil : '2021';
-    
+        let costFrom = req.query.costFrom ? req.query.costFrom: '0'
+        let costTo = req.query.costTo ? req.query.costTo : '99999999999';
+        let yearFrom = req.query.yearFrom ? parseInt(req.query.yearFrom) : '1899';
+        let yearUntil = req.query.yearUntil ? parseInt(req.query.yearUntil) : '99999';
+        let mileageFrom = req.query.mileageFrom ? req.query.mileageFrom : '0';
+        let mileageTo = req.query.mileageTo ? req.query.mileageTo : '99999999999';
         const params = {
             ...req.query,
         }
-        yearFrom && yearUntil !== undefined ? (delete params.yearFrom, delete params.yearUntil, params.year = {$gt: yearFrom, $lt: yearUntil}) : null
-        costFrom && costTo !== undefined ? (delete params.costFrom, delete params.costTo, params.cost = {$gt: costFrom, $lt: costTo}) : null
-        console.log(params)
+        yearFrom && yearUntil !== undefined ? (delete params.yearFrom, delete params.yearUntil, params.year = {$gt: yearFrom -1, $lt: yearUntil + 1 }) : null
+        costFrom && costTo !== undefined ? (delete params.costFrom, delete params.costTo, params.cost = {$gt: costFrom -1, $lt: costTo + 1}) : null
+        mileageFrom && mileageTo !== undefined ? (delete params.mileageFrom, delete params.mileageTo, params.mileage = {$gt: mileageFrom - 1, $lt: parseInt(mileageTo) + 1}) : null
+        console.log(params.cost)
+        console.log(params.mileage)
         CarModel.find(params).exec((err,data) => {
             if(err) {
                 res.status(500).json({

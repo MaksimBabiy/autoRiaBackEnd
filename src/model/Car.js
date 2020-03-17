@@ -7,7 +7,7 @@ const CarSchema = new Schema({
     theCountryOfManufacture: String,
     mark: String,
     model: String,
-    mileage: String,
+    mileage: Number,
     desc: String,
     extraDesc: String,
     phone: Number,
